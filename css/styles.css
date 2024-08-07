@@ -113,6 +113,34 @@ ul {
   color: rgba(4, 3, 6, 0.4);
 }
 @media screen and (min-width: 768px) {
+  .container {
+    margin-bottom: 75px;
+  }
+
+  .reviews-title {
+    font-size: 48px;
+  }
+
+  .reviews-text {
+    font-size: 14px;
+    line-height: 1.29;
+    margin-bottom: 75px;
+  }
+  .reviews-list {
+    display: flex;
+    gap: 32px;
+  }
+  .reviews-item {
+  }
+  .reviews-image {
+  }
+  .reviews-subtitle {
+  }
+  .reviews-item-text {
+  }
+  .reviews-item:nth-child(2) {
+    display: flex;
+  }
 }
 
 @media screen and (min-width: 1280px) {
