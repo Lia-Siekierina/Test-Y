@@ -142,6 +142,10 @@ ul {
 @media screen and (min-width: 768px) {
   .reviews {
     padding-bottom: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 
   .reviews-title {
@@ -165,6 +169,7 @@ ul {
 
   .reviews-list {
     display: flex;
+
     gap: 32px;
   }
 
