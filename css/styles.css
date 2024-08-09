@@ -87,7 +87,7 @@ ul {
 
 /*---reviews---*/
 .container {
-  background-color: #021914;
+  background-color: #0e1823;
 }
 
 .reviews {
@@ -137,7 +137,7 @@ ul {
 }
 
 .swiper-pagination-bullet {
-  color: rgba(254, 253, 253, 0.936);
+  color: #fff;
   width: 13px;
   height: 13px;
 }
