@@ -88,6 +88,7 @@ ul {
 /*---reviews---*/
 .container {
   background-color: #021914;
+  padding-bottom: 80px;
 }
 
 .reviews {
@@ -101,6 +102,10 @@ ul {
   line-height: 1;
   text-align: center;
   margin-bottom: 25px;
+
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #fbfbfb;
 }
 
 .reviews-text {
@@ -109,11 +114,44 @@ ul {
   margin-bottom: 40px;
 }
 
-.reviews-item {
+.card-review {
+  max-width: 336px;
+  min-height: 282px;
   border-radius: 24px;
   background-color: #fbfbfb;
   padding: 32px 16px;
   text-align: center;
+  overflow-y: auto;
+  cursor: pointer;
+}
+
+.reviews-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reviews-thumb {
+  text-align: center;
+}
+.card-image {
+}
+
+.swiper-pagination-bullet {
+  color: rgba(254, 253, 253, 0.936);
+  width: 13px;
+  height: 13px;
+}
+
+.swiper-pagination-bullet-active {
+  background: #fd9222;
+  width: 28px;
+  height: 13px;
+  border-radius: 13px;
+}
+
+.swiper-wrapper-slide {
+  margin-top: 50px;
 }
 
 .reviews-image {
@@ -121,9 +159,11 @@ ul {
   margin-bottom: 24px;
 }
 
-.reviews-item:nth-child(2),
+/* .reviews-item:nth-child(2),
 .reviews-item:nth-child(3) {
   display: none;
+} */
+.card-review {
 }
 
 .reviews-subtitle {
@@ -179,10 +219,10 @@ ul {
     flex-basis: calc((100% - 32px) / 2);
   }
 
-  .reviews-item:nth-child(2) {
+  /* .reviews-item:nth-child(2) {
     display: flex;
     align-items: center;
-  }
+  } */
 }
 
 @media screen and (min-width: 1280px) {
@@ -190,27 +230,44 @@ ul {
     max-width: 854px;
   }
 
-  .reviews-item:nth-child(3) {
-    display: flex;
+  .card-review {
+    max-width: 376px;
+
+    padding: 32px 28px;
   }
 
+  .reviews-list {
+    gap: 26px;
+  }
+
+  /* .reviews-item:nth-child(3) {
+    display: flex;
+  } */
+
   .reviews-item {
-    flex-basis: calc((100% - 52px) / 3);
-    padding: 32px 28px;
+    /* flex-basis: calc((100% - 52px) / 3); */
   }
 
   .reviews-item-text {
     max-width: 320px;
   }
 
-  .reviews-item:nth-child(3) {
+  /* .reviews-item:nth-child(3) {
     display: flex;
-  }
+  } */
 }
 
 @media screen and (min-width: 1440px) {
-  .reviews-item {
-    flex-basis: calc((100% - 64px) / 3);
+  .card-review {
+    max-width: 392px;
+
     padding: 32px 36px;
+  }
+  .reviews-list {
+    flex-basis: calc((100% - 64px) / 3);
+  }
+
+  .reviews-item {
+    /* flex-basis: calc((100% - 64px) / 3); */
   }
 }
